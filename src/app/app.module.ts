@@ -9,6 +9,7 @@ import { AngularFireModule, AuthProviders, AuthMethods } from 'angularfire2';
 import { AppComponent } from './app.component';
 import { routing } from './app.routing';
 import { MessageBoardComponent } from './message-board/message-board.component';
+import { GlossaryComponent } from './glossary/glossary.component';
 
 
 export const firebaseConfig = {

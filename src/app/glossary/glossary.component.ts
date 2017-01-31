@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Term } from '../term.model';
+import { Router } from '@angular/router';
+import { AngularFire, FirebaseListObservable } from 'angularfire2';
 
 @Component({
   selector: 'app-glossary',
@@ -7,8 +9,10 @@ import { Term } from '../term.model';
   styleUrls: ['./glossary.component.scss']
 })
 export class GlossaryComponent {
+  terms: FirebaseListObservable<any[]>;
+  currentRoute: string = this.router.url;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }

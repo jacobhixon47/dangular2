@@ -1,0 +1,8 @@
+{ "terms": [{
+  "name": "Binding",
+  "definition": "The act of binding an HTML object property to a data object property."
+}, {
+  "name": "Injector",
+  "definition": "An object in the Angular dependency injection system that can find a named \"dependency\" in its cache or create such a thing with a registered provider."
+  }]
+}
