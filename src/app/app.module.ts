@@ -27,14 +27,15 @@ export const firebaseGoogleAuthConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    MessageBoardComponent
+    MessageBoardComponent,
+    GlossaryComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     AngularFireModule.initializeApp(firebaseConfig, firebaseGoogleAuthConfig),
-    routing
+    routing,
   ],
   providers: [],
   bootstrap: [AppComponent]

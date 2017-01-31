@@ -34,15 +34,15 @@ AppModule = __decorate([
     core_1.NgModule({
         declarations: [
             app_component_1.AppComponent,
-            glossary_component_1.GlossaryComponent,
-            message_board_component_1.MessageBoardComponent
+            message_board_component_1.MessageBoardComponent,
+            glossary_component_1.GlossaryComponent
         ],
         imports: [
             platform_browser_1.BrowserModule,
             forms_1.FormsModule,
             http_1.HttpModule,
             angularfire2_1.AngularFireModule.initializeApp(exports.firebaseConfig, exports.firebaseGoogleAuthConfig),
-            app_routing_1.routing
+            app_routing_1.routing,
         ],
         providers: [],
         bootstrap: [app_component_1.AppComponent]
