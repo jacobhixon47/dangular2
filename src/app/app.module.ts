@@ -27,7 +27,6 @@ export const firebaseGoogleAuthConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    GlossaryComponent,
     MessageBoardComponent
   ],
   imports: [
