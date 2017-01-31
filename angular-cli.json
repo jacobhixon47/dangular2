@@ -20,7 +20,6 @@
       "styles": [
         "../bower_components/bootstrap/dist/css/bootstrap.css",
         "styles.scss"
-
       ],
       "scripts": [],
       "environments": {
