@@ -1,30 +1,37 @@
 import { Injectable, OnChanges } from '@angular/core';
 import { Post } from './post.model';
-import { AngularFire, FirebaseListObservable, AngularFireAuth } from 'angularfire2';
+import { AngularFire, FirebaseListObservable, AngularFireAuth, FirebaseObjectObservable } from 'angularfire2';
 import { firebaseGoogleAuthConfig } from './app.module';
 
 @Injectable()
 export class UserService implements OnChanges {
-  auth;
   constructor(private af: AngularFire, afauth: AngularFireAuth) {
+    // af.auth.subscribe((user) => {
+    //   if(user) {
+    //     this.auth.google.uid = user;
+    //   } else {
+    //     console.log("No user");
+    //   }
+    // });
     // afauth.subscribe(afauth => {
     //   this.auth = afauth;
     // });
 
   }
-  currentUser;
 
   login() {
-    this.af.auth.login();
+    return this.af.auth.login();
+
     // console.log("login function stuff:" + this.af.auth);
   }
 
   logout() {
-    this.af.auth.logout();
+    return this.af.auth.logout();
   }
 
-  checkAuth(){
-    console.log("checkAuth: " + this.auth);
+  checkAuth(): any {
+    return this.af.auth;
+    // console.log("checkAuth: " + this.auth);
   }
 
   ngOnChanges(...args: any[]) {
