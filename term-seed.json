@@ -1,8 +1,22 @@
 { "terms": [{
-  "name": "Binding",
-  "definition": "The act of binding an HTML object property to a data object property."
+    "name": "Binding",
+    "definition": "The act of binding an HTML object property to a data object property."
 }, {
-  "name": "Injector",
-  "definition": "An object in the Angular dependency injection system that can find a named \"dependency\" in its cache or create such a thing with a registered provider."
+    "name": "Injector",
+    "definition": "An object in the Angular dependency injection system that can find a named \"dependency\" in its cache or create such a thing with a registered provider."
+  }],
+  "posts": [{
+    "title": "What is the way to install angularfire2?",
+    "content": "I am unsure of how to to install angularfire2. Anyone know? Please help, I have a project for Epicodus due tomorrow!"
+  }, {
+    "title": "Cool Lorem Ipsum I found",
+    "content": "Toy mouse squeak roll over meowwww stare at the wall, play with food and get confused by dust or pee in the shoe drink water out of the faucet. Caticus cuteicus has closed eyes but still sees you eat and than sleep on your face sit in window and stare ooo, a bird!"
+  }],
+  "users": [{
+    "name": "Jacob Hixon",
+    "email": "jacobhixon47@gmail.com"
+  }, {
+    "name": "Chris Wingo",
+    "email": "cmwingo@gmail.com"
   }]
 }

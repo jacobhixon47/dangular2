@@ -1,17 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../user.service';
 import { Router } from '@angular/router';
-import { FirebaseObjectObservable } from 'angularfire2';
+import { FirebaseObjectObservable, FirebaseListObservable } from 'angularfire2';
+import { PostService } from '../post.service';
 
 @Component({
   selector: 'app-message-board',
   templateUrl: './message-board.component.html',
   styleUrls: ['./message-board.component.css'],
-  providers: [UserService]
+  providers: [UserService, PostService]
 })
 export class MessageBoardComponent implements OnInit {
+  posts: FirebaseListObservable<any[]>;
   public isLoggedIn: boolean;
-  constructor(private userService: UserService, private router: Router) {
+  constructor(private userService: UserService, private router: Router, private postService: PostService) {
     this.userService.checkAuth().subscribe(
       (authResponse) => {
         if(authResponse == null) {
@@ -26,6 +28,7 @@ export class MessageBoardComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.posts = this.postService.getPosts();
   }
 
   login() {

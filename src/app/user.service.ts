@@ -5,7 +5,7 @@ import { firebaseGoogleAuthConfig } from './app.module';
 
 @Injectable()
 export class UserService implements OnChanges {
-  constructor(private af: AngularFire, afauth: AngularFireAuth) {
+  constructor(private af: AngularFire, private afauth: AngularFireAuth) {
     // af.auth.subscribe((user) => {
     //   if(user) {
     //     this.auth.google.uid = user;
