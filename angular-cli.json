@@ -18,7 +18,9 @@
       "prefix": "app",
       "mobile": false,
       "styles": [
-        "styles.css"
+        "../bower_components/bootstrap/dist/css/bootstrap.css",
+        "styles.scss"
+
       ],
       "scripts": [],
       "environments": {

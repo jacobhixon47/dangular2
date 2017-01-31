@@ -1,0 +1,20 @@
+{
+  "name": "team-week",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Jacob Hixon <jacobhixon47@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/atwood-skye/team-week-javascript",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
