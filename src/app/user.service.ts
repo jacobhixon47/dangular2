@@ -27,7 +27,7 @@ export class UserService implements OnChanges {
     console.log("checkAuth: " + this.auth);
   }
 
-  ngOnChanges() {
+  ngOnChanges(...args: any[]) {
     // this.afauth.subscribe(afauth => {
     //   // this.auth = auth.google.uid;
     //   console.log("uid: " + afauth.uid);
