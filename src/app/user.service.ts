@@ -4,13 +4,17 @@ import { AngularFire, FirebaseListObservable, AngularFireAuth } from 'angularfir
 import { firebaseGoogleAuthConfig } from './app.module';
 
 @Injectable()
-export class UserService implements OnChanges {
+export class UserService {
   auth;
   constructor(private af: AngularFire, afauth: AngularFireAuth) {
-    // afauth.subscribe(afauth => {
-    //   this.auth = afauth;
-    // });
-
+    this.auth.subscribe(auth => {
+      if (afauth !== null) {
+        auth = afauth.google.uid;
+      } else {
+        auth = null;
+      }
+      console.log("subscribe: " + auth)
+    });
   }
   currentUser;
 
@@ -26,13 +30,4 @@ export class UserService implements OnChanges {
   checkAuth(){
     console.log("checkAuth: " + this.auth);
   }
-
-  ngOnChanges(...args: any[]) {
-    // this.afauth.subscribe(afauth => {
-    //   // this.auth = auth.google.uid;
-    //   console.log("uid: " + afauth.uid);
-    // })
-  }
-
-
 }
