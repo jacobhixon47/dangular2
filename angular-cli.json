@@ -19,9 +19,13 @@
       "mobile": false,
       "styles": [
         "../bower_components/bootstrap/dist/css/bootstrap.css",
+        "../bower_components/animate.css",
         "styles.scss"
       ],
-      "scripts": [],
+      "scripts": [
+        "../bower_components/bootstrap/dist/js/bootstrap.js",
+        "../node_modules/jquery/dist/jquery.js"
+      ],
       "environments": {
         "source": "environments/environment.ts",
         "dev": "environments/environment.ts",

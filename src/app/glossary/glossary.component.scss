@@ -1,6 +1,21 @@
-//@import '../../styles.scss';
+@import '../../styles.scss';
 
-//h1 {
-  //text-align: center;
-  //color: $red;
-//}
+.panel-title {
+  background-color: black;
+  color: aqua;
+  padding: 1%;
+  border: 2px solid teal;
+}
+
+.panel-body {
+  background-color: black;
+  color: yellow;
+  padding: 1%;
+  border-left: 2px solid teal;
+  border-right: 2px solid teal;
+  border-bottom: 2px solid teal;
+}
+
+.button {
+  width: 100%;
+}

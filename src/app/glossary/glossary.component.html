@@ -1,6 +1,10 @@
 <h3>this glossary works</h3>
 
-<div *ngFor="let term of terms | async">
-<h1>{{term.name}}</h1>
-<h3>{{term.definition}}</h3>
+<div *ngFor="let term of terms | async" class="panel panel-default">
+  <div class="panel-title" data-toggle="collapse" data-target="#{{term.name}}">
+  {{term.name}}
+</div>
+<div id="{{term.name}}" class="collapse">
+<div class="panel-body">{{term.definition}}</div>
+</div>
 </div>

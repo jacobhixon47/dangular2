@@ -13,6 +13,7 @@ import { TermService } from '../term.service';
 export class GlossaryComponent {
   terms: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
+  $:any;
 
   constructor(private router: Router, private termService: TermService) { }
 
