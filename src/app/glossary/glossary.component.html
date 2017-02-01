@@ -8,3 +8,25 @@
     <div class="panel-body">{{term.definition}}</div>
   </div>
 </div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add New Member</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>New Term:</label>
+        <br>
+        <input #newTerm>
+      </div>
+
+      <div>
+        <label>New Definition:</label>
+        <br>
+        <textarea #newDefinition></textarea>
+      </div>
+      <button (click)="submitForm(newTerm.value, newDefinition.value); newTerm.value=''; newDefinition.value=''">Add Member</button>
+    </div>
+  </div>
+</div>

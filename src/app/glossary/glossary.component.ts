@@ -13,12 +13,16 @@ import { TermService } from '../term.service';
 export class GlossaryComponent {
   terms: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
-  $:any;
 
   constructor(private router: Router, private termService: TermService) { }
 
   ngOnInit() {
     this.terms = this.termService.getTerms();
+  }
+
+  submitForm(term: string, definition: string) {
+    var newTerm: Term = new Term(term, definition);
+    this.termService.addTerm(newTerm);
   }
 
 }

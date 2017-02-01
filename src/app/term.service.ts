@@ -15,4 +15,8 @@ export class TermService {
     return this.terms;
   }
 
+  addTerm(newTerm: Term) {
+    this.terms.push(newTerm);
+  }
+
 }
