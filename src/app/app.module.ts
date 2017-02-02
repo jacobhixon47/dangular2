@@ -9,6 +9,7 @@ import { AngularFireModule, AuthProviders, AuthMethods } from 'angularfire2';
 import { AppComponent } from './app.component';
 import { routing } from './app.routing';
 import { MessageBoardComponent } from './message-board/message-board.component';
+import { ResourcesComponent } from './resources/resources.component';
 
 
 export const firebaseConfig = {
@@ -26,7 +27,8 @@ export const firebaseGoogleAuthConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    MessageBoardComponent
+    MessageBoardComponent,
+    ResourcesComponent
   ],
   imports: [
     BrowserModule,
