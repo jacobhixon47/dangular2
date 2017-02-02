@@ -1,16 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 body {
   background-color: black;
-}
-
-textarea {
-  height: 200px;
-  width: 400px;
-  color: black;
-}
-
-input {
-  color: black;
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: 2px;
 }
 
 .navbar, .navbar-default{
@@ -22,9 +14,11 @@ input {
   font-size: 2em;
   margin-top: 10px;
   color: teal;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
-a {
+.navbar a {
   color: teal;
   margin-right: 10px;
+  font-family: 'Roboto Condensed', sans-serif;
 }

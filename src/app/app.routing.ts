@@ -7,7 +7,7 @@ import { GlossaryComponent } from './glossary/glossary.component';
 const appRoutes: Routes = [
 
   {
-    path: '',
+    path: 'message-board',
     component: MessageBoardComponent
   },
   {
