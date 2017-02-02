@@ -18,4 +18,7 @@ export class PostService {
     return this.af.database.object('/posts/' + postId);
   }
 
+  addPost(newPost: Post) {
+    this.posts.push(newPost);
+  }
 }
