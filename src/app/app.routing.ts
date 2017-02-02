@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { MessageBoardComponent } from './message-board/message-board.component';
 import { GlossaryComponent } from './glossary/glossary.component';
+import { ResourcesComponent } from './resources/resources.component'
 
 const appRoutes: Routes = [
 
@@ -13,6 +14,10 @@ const appRoutes: Routes = [
   {
     path: 'glossary',
     component: GlossaryComponent
+  },
+  {
+    path: 'resources',
+    component: ResourcesComponent
   }
 ]
 

@@ -10,7 +10,7 @@ import { AppComponent } from './app.component';
 import { routing } from './app.routing';
 import { MessageBoardComponent } from './message-board/message-board.component';
 import { GlossaryComponent } from './glossary/glossary.component';
-
+import { ResourcesComponent } from './resources/resources.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -27,8 +27,9 @@ export const firebaseGoogleAuthConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    GlossaryComponent,
-    MessageBoardComponent
+    MessageBoardComponent,
+    ResourcesComponent,
+    GlossaryComponent
   ],
   imports: [
     BrowserModule,
