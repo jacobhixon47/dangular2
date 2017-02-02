@@ -12,3 +12,19 @@ textarea {
 input {
   color: black;
 }
+
+.navbar, .navbar-default{
+  background-color: black;
+  border: none;
+}
+
+.navbar-brand {
+  font-size: 2em;
+  margin-top: 10px;
+  color: teal;
+}
+
+a {
+  color: teal;
+  margin-right: 10px;
+}
