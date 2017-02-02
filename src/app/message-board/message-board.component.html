@@ -7,9 +7,11 @@
 <div class="row" *ngIf="auth | async">
   <div class="col-sm-12 col-md-8">
     <div *ngFor="let post of posts | async">
-      <h3>{{post.title}}</h3>
-      <p>{{post.content}}</p>
-      <hr>
+      <div (click)="goToDetailsPage(post)">
+        <h3>{{post.title}}</h3>
+        <p>{{post.content}}</p>
+        <hr>
+      </div>
     </div>
   </div>
 

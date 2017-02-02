@@ -45,4 +45,8 @@ export class MessageBoardComponent implements OnInit {
     var newPost: Post = new Post(title, content);
     this.postService.addPost(newPost);
   }
+
+  goToDetailsPage(post) {
+    this.router.navigate(['posts', post.$key])
+  }
 }

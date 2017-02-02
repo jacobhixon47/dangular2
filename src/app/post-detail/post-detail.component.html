@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-md-12">
+    <button routerLink="/posts" class="btn btn-info">Back</button>
+    <h1>{{(post | async)?.title}}</h1>
+    <h3>{{(post | async)?.content}}</h3>
+    <br><br>
+    <label for="reply">Reply</label><br>
+    <textarea name="reply" rows="8" cols="80" #newContent></textarea><br><br>
+    <button class="btn btn-success" (click)="addReply(newContent.value); newContent.value='';">Submit Reply</button>
+    <hr>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <h2>Replies</h2><br><br>
+    <div *ngFor="let reply of replies | async">
+      <h4>{{reply.content}}</h4>
+      <hr>
+    </div>
+  </div>
+</div>

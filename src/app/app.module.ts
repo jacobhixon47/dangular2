@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { routing } from './app.routing';
 import { MessageBoardComponent } from './message-board/message-board.component';
 import { GlossaryComponent } from './glossary/glossary.component';
+import { PostDetailComponent } from './post-detail/post-detail.component';
 
 
 export const firebaseConfig = {
@@ -28,7 +29,8 @@ export const firebaseGoogleAuthConfig = {
   declarations: [
     AppComponent,
     MessageBoardComponent,
-    GlossaryComponent
+    GlossaryComponent,
+    PostDetailComponent
   ],
   imports: [
     BrowserModule,

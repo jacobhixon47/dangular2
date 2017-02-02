@@ -3,16 +3,22 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { MessageBoardComponent } from './message-board/message-board.component';
 import { GlossaryComponent } from './glossary/glossary.component';
+import { PostDetailComponent } from './post-detail/post-detail.component';
+
 
 const appRoutes: Routes = [
 
   {
-    path: 'board',
+    path: 'posts',
     component: MessageBoardComponent
   },
   {
     path: 'glossary',
     component: GlossaryComponent
+  },
+  {
+    path: 'posts/:id',
+    component: PostDetailComponent
   }
 ]
 
