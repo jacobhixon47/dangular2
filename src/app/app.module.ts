@@ -11,7 +11,8 @@ import { routing } from './app.routing';
 import { MessageBoardComponent } from './message-board/message-board.component';
 import { GlossaryComponent } from './glossary/glossary.component';
 import { PostDetailComponent } from './post-detail/post-detail.component';
-
+import { ResourcesComponent } from './resources/resources.component';
+import { HomeComponent } from './home/home.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -30,7 +31,10 @@ export const firebaseGoogleAuthConfig = {
     AppComponent,
     MessageBoardComponent,
     GlossaryComponent,
-    PostDetailComponent
+    PostDetailComponent,
+    ResourcesComponent,
+    GlossaryComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

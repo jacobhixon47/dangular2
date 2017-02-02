@@ -1,16 +1,17 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" routerLink="">Angular 2</a>
     </div>
     <ul class="nav navbar-nav navbar-right">
-      <li><a routerLink="about">glossary</a></li>
+      <li><a routerLink="glossary" class="pink-text">Glossary</a></li>
+      <li><a routerLink="posts" class="yellow-text">Forum</a></li>
+      <li><a routerLink="resources" class="aqua-text">Resources</a></li>
       <li *ngIf="!(auth | async)"><a (click)="login()" style="cursor: pointer;">Sign In With Google</a></li>
       <li *ngIf="auth | async"><a (click)="logout()" style="cursor: pointer;">Sign Out</a></li>
     </ul>
   </div>
 </nav>
-
-<div class="container-fluid">
+<div class="container-fluid body-container">
   <router-outlet></router-outlet>
 </div>

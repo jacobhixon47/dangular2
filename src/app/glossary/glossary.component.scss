@@ -1,6 +1,61 @@
 @import '../../styles.scss';
 
-h1 {
-  text-align: center;
-  color: $red;
+.panel-title {
+  background-color: black;
+  color: white;
+  padding: 1%;
+  border: 1px solid #282829;
+}
+
+.panel-body {
+  background-color: #282829;
+  color: white;
+  padding: 1%;
+  border-left: 1px solid #282829;
+  border-right: 1px solid #282829;
+  border-bottom: 1px solid #282829;
+}
+
+.button {
+  width: 100%;
+}
+
+.hover:hover {
+  background-color: #525657;
+  color: white;
+}
+
+.form {
+  border: 2px solid #282829;
+  background-color: #282829;
+  width: 40%;
+  padding: 10px;
+}
+
+label {
+  color: white;
+  opacity: 0.8;
+}
+
+
+
+.add-button {
+  background: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+input, textarea {
+  border: 1px solid black;
+}
+
+textarea {
+  height: 200px;
+  width: 400px;
+  color: black;
+}
+
+input {
+  color: black;
 }

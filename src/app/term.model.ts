@@ -1,3 +1,3 @@
 export class Term {
-  constructor(public word: string, public definition: string)
+  constructor(public name: string, public definition: string) {}
 }
