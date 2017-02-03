@@ -1,25 +1,27 @@
-<div class="row" *ngIf="!(auth | async)">
-  <div class="col-md-12" style="text-align: center;">
-    <h1>You must be signed in to view this page.</h1>
-    <button type="button" (click)="login()" class="btn btn-info">+ Sign In With Google</button>
-  </div>
-</div>
-<div class="row" *ngIf="auth | async">
-  <div class="col-sm-12 col-md-8">
-    <div *ngFor="let post of posts | async">
-      <div (click)="goToDetailsPage(post)">
-        <h3>{{post.title}}</h3>
-        <p>{{post.content}}</p>
-        <hr>
-      </div>
+<div class="container">
+  <div class="row" *ngIf="!(auth | async)">
+    <div class="col-md-12" style="text-align: center;">
+      <h1 class="aqua-text">You must be signed in to view this page.</h1>
+      <button type="button" (click)="login()" class="btn btn-info pink-bg">+ Sign In With Google</button>
     </div>
   </div>
+  <div class="row" *ngIf="auth | async">
+    <div class="col-sm-12 col-md-8">
+      <div *ngFor="let post of posts | async">
+        <div (click)="goToDetailsPage(post)">
+          <h3>{{post.title}}</h3>
+          <p>{{post.content}}</p>
+          <hr>
+        </div>
+      </div>
+    </div>
 
-  <div class="col-sm-12 col-md-4">
-    <label for="title">Post Title</label>
-    <input type="text" #newTitle style="width: 100%;" name="title"><br><br>
-    <label for="content">Post Body</label>
-    <textarea rows="15" cols="60" #newContent style="width: 100%;" name="content"></textarea><br><br>
-    <button (click)="addNewPost(newTitle.value, newContent.value); newTitle.value=''; newContent.value='';" class="btn my-button">Submit Post</button><br><br>
+    <div class="col-sm-12 col-md-4">
+      <label for="title">Post Title</label>
+      <input type="text" #newTitle style="width: 100%;" name="title" required><br><br>
+      <label for="content">Post Body</label>
+      <textarea rows="10" cols="60" #newContent style="width: 100%;" name="content" required></textarea><br><br>
+      <button (click)="addNewPost(newTitle.value, newContent.value); newTitle.value=''; newContent.value='';" class="btn pink-bg">Submit Post</button><br><br>
+    </div>
   </div>
 </div>

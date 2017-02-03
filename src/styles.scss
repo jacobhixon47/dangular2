@@ -93,3 +93,12 @@ img {
 .center-align {
   text-align: center;
 }
+
+.body-container {
+  margin-top: 60px;
+}
+
+.pink-bg {
+  background-color: $pink;
+  border: 1px $pink solid;
+}

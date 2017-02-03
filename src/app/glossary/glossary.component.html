@@ -1,35 +1,13 @@
 <div class="panel panel-default page-heading">
-
   <h3 class="header-text pink-text">Glossary</h3>
 </div>
-
 <div class="container">
-
-<div *ngFor="let term of terms | async" class="panel panel-default">
-  <div class="panel-title hover" data-toggle="collapse" [attr.data-target]="'#' + term.name.split(' ').join('')">
-  <b>{{term.name}}</b>
-  </div>
-  <div id="{{term.name.split(' ').join('')}}" class="collapse">
-    <div class="panel-body">{{term.definition}}</div>
-  </div>
-</div>
-
-<div class="panel panel-default form">
-  <div class="panel-body">
-    <div>
-      <div>
-        <label>New Term:</label>
-        <br>
-        <input #newTerm>
-      </div>
-
-      <div>
-        <label>New Definition:</label>
-        <br>
-        <textarea #newDefinition></textarea>
-      </div>
-      <button (click)="submitForm(newTerm.value, newDefinition.value); newTerm.value=''; newDefinition.value=''" class="add-button">Add Term</button>
+  <div *ngFor="let term of terms | async" class="panel panel-default">
+    <div class="panel-title hover" data-toggle="collapse" [attr.data-target]="'#' + term.name.split(' ').join('')">
+      <b>{{term.name}}</b>
+    </div>
+    <div id="{{term.name.split(' ').join('')}}" class="collapse">
+      <div class="panel-body">{{term.definition}}</div>
     </div>
   </div>
-</div>
 </div>
